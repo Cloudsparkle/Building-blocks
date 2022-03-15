@@ -1,4 +1,4 @@
-#Try loading Citrix Powershell modules, exit when failed
+# Try loading Citrix Powershell modules, exit when failed
 If ((Get-PSSnapin "Citrix*" -EA silentlycontinue) -eq $null)
 {
   try {Add-PSSnapin Citrix* -ErrorAction Stop }
